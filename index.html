@@ -159,7 +159,7 @@
             <li>Asynchronusly</li>
           </ul>
           <aside class="notes">
-            I want to zero in on the word "together" for a second.  What means to me is sharing our knowledge and efforts in an online space, with history for reference, and asynchrounsly.  This means you aren't tapping your co-worker on the shoulder and demanding they give you time, and we all get to be more productive.<br>
+            I want to zero in on the word "together" for a second.  To me it means sharing our knowledge and efforts in an online space, with history for reference, and asynchrounsly.  This means you aren't tapping your co-worker on the shoulder and demanding they give you time, and we all get to be more productive.<br>
           </aside>
         </section>
 
@@ -167,14 +167,14 @@
           <h3>GitHub</h3>
           <small>(in case you aren't already convinced)</small>
           <ul>
-            <li>Integrated Issue Tracking</li>
-            <li>Collaborative Code Review (Pull Request)</li>
-            <li>Organizations &amp; Teams</li>
-            <li>Robust API</li>
-            <li>Integrations</li>
-            <li>Free for public</li>
-            <li>Pay for private</li>
-            <li>Pay more for <a href="https://enterprise.github.com/home">Enterprise</a></li>
+            <li class="fragment">Integrated Issue Tracking</li>
+            <li class="fragment">Collaborative Code Review (Pull Request)</li>
+            <li class="fragment">Organizations &amp; Teams</li>
+            <li class="fragment">Robust API</li>
+            <li class="fragment">Integrations</li>
+            <li class="fragment">Free for public</li>
+            <li class="fragment">Pay for private</li>
+            <li class="fragment">Pay more for <a href="https://enterprise.github.com/home">Enterprise</a></li>
           </ul>
           <aside class="notes">
             For those of you not using GitHub at work, here's a few selling points in case you want to convice your team.<br>
@@ -184,8 +184,17 @@
             → github is also Team oriented.  you can create organizations, group them by teams, and control access to repos individually.<br>
             → GitHub's website is built using their own API.  Almost anything you can do on GitHub can be done with the very well documented API.<br>
             → And because the API is awesome, it integrates with a lot of services.  Flowdock, HipChat, Slack, IRC, Jenkins, Travis, JIRA, the list goes on and on.<br>
-            → It's free for public repositories, even organizations!  If you aren't trying to hide it from the world, you'll never pay a dime. If you pay you unlock private repositories.<br>
+            → It's free for public repositories, even organizations!  If you aren't trying to hide it from the world, you'll never pay a dime.<br>
+            → If you pay you unlock private repositories.<br>
             → If you pay even more you can get Enterprise, and run it on your own servers.<br>
+          </aside>
+        </section>
+
+        <section style='height: 75%'>
+          <h3>How to GitHub?</h3>
+          <img src="images/github.png" style='max-height: 75%'>
+          <aside class="notes">
+            okay enough sales stuff, lets talk about how we actually use this thing.  I want to start out by talking about some of the social aspects.
           </aside>
         </section>
 
@@ -193,9 +202,15 @@
           <h3><a href="https://help.github.com/articles/be-social/">Be Social</a></h3>
           <section>
             <img src="images/follow.png" alt="Follow People...">
+            <aside class="notes">
+              github is kind like facebook for code, you want to follow people who work on interesting things.  Stuff they are doing will show up in your dashboard feed!
+            </aside>
           </section>
           <section>
             <img src="images/watch.png" alt="Watch Repositories...">
+            <aside class="notes">
+              don't just follow people, watch repos.  If you use jQuery, wouldn't it be nice to know what the jQuery team is working on for the next version?  GitHub will email you about every issue or pull request if you watch a repository.
+            </aside>
           </section>
           <section>
             <h3>Did it get <strong>TOO</strong> social for you?</h3>
@@ -203,6 +218,9 @@
               <li><a href="https://github.com/settings/notifications">https://github.com/settings/notifications</a></li>
               <li><a href="https://github.com/watching">https://github.com/watching</a></li>
             </ul>
+            <aside class="notes">
+              If things get too social for you, you can always play with your notification settings and decide what gets e-mailed, or get a list of the things you are watching.
+            </aside>
           </section>
           <section>
             <h3>G-Mail Filters</h3>
@@ -216,8 +234,15 @@
               <li><code>cc:me</code><br>
               @gnarf, @jquery/core, or you've posted on it
               </li>
+              <li><code>list:*.github.com !cc:me</code><br>
+              Skip Inbox for most stuff, but let cc's still show up
+              </li>
             </ul>
+            <aside class="notes">
+              Personally, I keep the "firehose" on, but filter using g-mail.  GitHub's social aspects are one of the reason it works.  Getting involved with conversations in issues and pull requests is how we build software better, together.
+            </aside>
           </section>
+
         </section>
 
         <section>
@@ -226,11 +251,17 @@
             <h4>Ahh, Push it</h4>
             <p><img src="images/push-it.gif"></p>
             <small>Like that prompt? Check out <a href="https://github.com/gnarf/.dotfiles/blob/master/init.sh#L3-L14">my dotfiles... on GitHub...</a>!</small>
+            <aside class="notes">
+              So how are we collaborative?  git allows you to push and pull code to and from remote servers, in this case, GitHub.
+            </aside>
           </section>
           <section>
             <h4>Access Control (personal repo)</h4>
             Repo → Settings → Collaborators<br>
             <img src="images/collab-personal.png" alt="Personal settings">
+            <aside class="notes">
+              You can give other people write access to your repos.
+            </aside>
           </section>
           <section>
             <h4>Access Control (organization - teams)</h4>
@@ -238,18 +269,40 @@
             <img src="images/collab-teams.png" alt="Team settings">
             Teams grant (read, write, or admin) to (repos) for (people).<br>
             Teams also setup @jquery/core for instance.
+            <aside class="notes">
+              You can give other people write access to your repos.
+            </aside>
           </section>
+
+          <section>
+            <h4>Access Control (fork!)</h4>
+            <img src="images/fork.png" alt="Fork">
+            <aside class="notes">
+              If you can read a repo, you can fork it, which gives you your own copy (on github) of the repo that you can push to, in case you can't push to the "real thing" (often called upstream)
+            </aside>
+          </section>
+
           <section>
             <h4>View Collaborators (per file)</h4>
             <a href="https://github.com/jquery/jquery/blob/master/src/effects.js"><img src="images/collab-per-file.png" alt="Team settings"></a>
+            <aside class="notes">
+              So one of the cool things, you can see who's written code in any file!  This can help us figure out which of your co-workers to ask for help debugging.
+            </aside>
           </section>
           <section>
             <h4>View Collaborators (per line / blame)</h4>
             <a href="https://github.com/jquery/jquery/blame/master/src/effects.js#L463"><img src="images/collab-per-line.png" alt="Team settings"></a>
+            <aside class="notes">
+              but we can even take it a step further and look at the history PER LINE!
+              Oh, and notices these comment icons? ....
+            </aside>
           </section>
           <section>
-            <h4>Comment on a commit?!</h4>
+            <h4>Comment on a commit‽</h4>
             <a href="https://github.com/jquery/jquery/commit/36369ce50ff276dcf2959add7dc949af83b221c2#comments"><img src="images/collab-comment-commit.png" alt="Team settings"></a>
+            <aside class="notes">
+              You can comment on commits for any reason, if even to thank your teammates for the help they gave.
+            </aside>
           </section>
         </section>
 
