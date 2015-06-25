@@ -316,12 +316,14 @@
             git checkout master
             git pull origin master
             git checkout -b my-feature</pre></code>
+            <aside class="notes">Get in the habbit of always branching from a "fresh pull" of master</aside>
           </section>
 
           <section>
             <p>Push to GitHub</p>
             <img src="images/push-branch.png" style="max-height: 12em"><br>
             <small>(yeah, read this later)</small>
+            <aside class="notes">read the image here later, but you want to "git add" your changes to "stage them", then "git commit" your staged changes to your branch, and then "git push" it!</aside>
           </section>
 
           <section>
@@ -329,21 +331,25 @@
             <code>hub browse</code><br>
             <img src="images/pr-create.png" class="fragment">
             <img src="images/pr-create-2.png" class="fragment">
+            <aside class="notes">So, once you've pushed your code change, you want to open up GitHub in your browser.  Hub is a great tool by github that interacts with github on the command line.  One great feature "hub browse" will open up the repo in your browser!</aside>
           </section>
 
           <section>
             <p>PR's are discussions</p>
             <img src="images/pr-discuss.png"><br>
             (with code)
+            <aside class="notes">Now that you are creating your PR, remember, it's a discussion.  Write about what you did, why you did it, and why you think it needs to be merged!</aside>
           </section>
 
           <section>
-            <p>Can't Push? PR from your fork!</p>
+            <p>Can't Push upstream? PR from your fork!</p>
             <a href="https://github.com/jquery/jquery/pull/731/files"><img src="images/collab-pr.png" alt="Pull Request"></a>
+            <aside class="notes">Not having access to push should not stop you.  One of the best thing about forks and github is how easy it is to pull changes from a fork to your local repo for testing.</aside>
           </section>
 
           <section>
             Every change should enter a repository as a Pull Request.
+            <aside class="notes">Every change... At least once you have more than one person working on it</aside>
           </section>
 
           <section>
@@ -353,8 +359,18 @@
               <li>"Magic links" from comments<br>
                  <code>#issue</code>, <code>gh-issue</code>, <code>owner/repo#issue</code>,<br><code>@user</code>, <code>@org/team</code>, <code>sha</code></li>
                <li>Expect a back and forth</li>
-               <li>(be friendly!)</li>
             </ul>
+            <aside class="notes">So now that we have a PR, lets talk about reviews. GH's interface allows us to comment on a PR, comment on a line of code in the diff of a PR, link up to other issues and CC other users and teams really easily.  Expect a bit of back and forth, make a few revisions, push fixes.</aside>
+          </section>
+
+          <section>
+            Be Friendly
+            <aside class="notes">I had to give this one its own slide.  You should do your best to be friendly, and assume that others are also generally friendly.  A lot of times we work with the same people over and over, and review a lot of code every day.  Sometimes we forget to say things like "please" and "thank you", and when we forget about it, someone inevitably gets mad.</aside>
+          </section>
+
+          <section>
+            Don't let it be personal
+            <aside class="notes">which brings me to another point... don't let it get personal, this is just code we are talking about here, and critisims on spaces vs tabs are not a comment on you.</aside>
           </section>
 
           <section>
