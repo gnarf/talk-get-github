@@ -1,344 +1,344 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Get the most from GitHub</title>
+    <title>Get the most from GitHub</title>
 
-		<meta name="description" content="Corey, a long time contributor to the jQuery project and an Open Web Engineer at Bocoup, is going to share with you the ways that GitHub can make your life easier, increase your entire teams productivity, and help build better software. We will also cover how to use GitHub's social aspects to follow, learn, and contribute to open source projects.">
-		<meta name="author" content="Corey Frang">
+    <meta name="description" content="Corey, a long time contributor to the jQuery project and an Open Web Engineer at Bocoup, is going to share with you the ways that GitHub can make your life easier, increase your entire teams productivity, and help build better software. We will also cover how to use GitHub's social aspects to follow, learn, and contribute to open source projects.">
+    <meta name="author" content="Corey Frang">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section style='position: relative; height: 75%'>
-					<h2>Get The Most From GitHub</h2>
-					<a href="https://github.com/"><img src="images/github.png" alt="GitHub Logo" style="max-height: 75%"></a>
-					<p><a href="http://gnarf.net/talks/get-github">http://gnarf.net/talks/get-github</a><br>
-					<small><a href="https://github.com/gnarf/talk-get-github">https://github.com/gnarf/talk-get-github</a></small></p>
-					<p style='text-align: right; position: absolute; bottom:0; right: 0;'>
-						<small>
-							Corey Frang<br>
-							BostonJS 2015-06-25<br>
-							Twitter: <a href="https://twitter.com/gnarf">@gnarf</a><br>
-							GitHub: <a href="https://github.com/gnarf">@gnarf</a>
-						</small>
-					</p>
-					<aside class="notes">
-						Welcome! Glad you found your way to the speaker notes.<br>
-						A quick little bit about myself.  My name is Corey, I have no pronoun preference,
-						and you can find me on twitter and github @gnarf.
-					</aside>
-				</section>
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section style='position: relative; height: 75%'>
+          <h2>Get The Most From GitHub</h2>
+          <a href="https://github.com/"><img src="images/github.png" alt="GitHub Logo" style="max-height: 75%"></a>
+          <p><a href="http://gnarf.net/talks/get-github">http://gnarf.net/talks/get-github</a><br>
+          <small><a href="https://github.com/gnarf/talk-get-github">https://github.com/gnarf/talk-get-github</a></small></p>
+          <p style='text-align: right; position: absolute; bottom:0; right: 0;'>
+            <small>
+              Corey Frang<br>
+              BostonJS 2015-06-25<br>
+              Twitter: <a href="https://twitter.com/gnarf">@gnarf</a><br>
+              GitHub: <a href="https://github.com/gnarf">@gnarf</a>
+            </small>
+          </p>
+          <aside class="notes">
+            Welcome! Glad you found your way to the speaker notes.<br>
+            A quick little bit about myself.  My name is Corey, I have no pronoun preference,
+            and you can find me on twitter and github @gnarf.
+          </aside>
+        </section>
 
-				<section>
-					<h3>I work at Bocoup</h3>
-					<a href="http://bocoup.com"><img src="images/bocoup.png"></a>
-					<aside class="notes">
-						I work at bocoup, with some awesome peeps! And we all use GitHub, everyday.
-					</aside>
-				</section>
+        <section>
+          <h3>I work at Bocoup</h3>
+          <a href="http://bocoup.com"><img src="images/bocoup.png"></a>
+          <aside class="notes">
+            I work at bocoup, with some awesome peeps! And we all use GitHub, everyday.
+          </aside>
+        </section>
 
-				<section>
-					<h3>I work on jQuery</h3>
-					<a href="http://jquery.org"><img src="images/jquery.png"></a>
-					<aside class="notes">
-						I've contributed to a lot of jQuery teams.  The Core Team, UI Team, Infrastructure Team, and the Foundation Board to name a few.  If you've used .animate(), or looked at a jQuery website, you've used my work. That work was all done using GitHub.
-					</aside>
-				</section>
+        <section>
+          <h3>I work on jQuery</h3>
+          <a href="http://jquery.org"><img src="images/jquery.png"></a>
+          <aside class="notes">
+            I've contributed to a lot of jQuery teams.  The Core Team, UI Team, Infrastructure Team, and the Foundation Board to name a few.  If you've used .animate(), or looked at a jQuery website, you've used my work. That work was all done using GitHub.
+          </aside>
+        </section>
 
-				<section>
-					<h1>GitHub</h1>
-					<aside class="notes">
-						So I want to tell you how to GitHub, but before I talk about GitHub, let's talk about Git
-					</aside>
-				</section>
+        <section>
+          <h1>GitHub</h1>
+          <aside class="notes">
+            So I want to tell you how to GitHub, but before I talk about GitHub, let's talk about Git
+          </aside>
+        </section>
 
-				<section>
+        <section>
 <h3>So what is <a href="https://en.wikipedia.org/?title=Git_(software)">Git</a>?</h3>
 <ul>
-	<li>Revision Control</li>
-	<li>Distributed</li>
-	<li>Speed</li>
-	<li>Data Integrity</li>
-	<li>Non-Linear Workflows</li>
-	<li>Most Popular <a href="https://ianskerrett.wordpress.com/2014/06/23/eclipse-community-survey-2014-results/"><small>(source)</small></a></li>
+  <li>Revision Control</li>
+  <li>Distributed</li>
+  <li>Speed</li>
+  <li>Data Integrity</li>
+  <li>Non-Linear Workflows</li>
+  <li>Most Popular <a href="https://ianskerrett.wordpress.com/2014/06/23/eclipse-community-survey-2014-results/"><small>(source)</small></a></li>
 </ul>
 
-					<aside class="notes">
-						Poll: How many people have never used git? have you used other source control?
-						In case you aren't familiar, git is...<br>
-						→ code goes in a git repository... A history of the codebase, revision, control<br>
-						→ distributed means every "clone" is it's own local repo (offline anyone)<br>
-						→ speedy because it's local for most operations<br>
-						→ because sha1 checksums<br>
-						→ non-linear... branching and mergeing are super fast, A core assumption in Git is that a change will be merged more often than it is written<br>
-						→ popular! yay<br><br>
-						(dont advance)
-						If you're curious to read more about it, or need some selling points, the wiki page is pretty great
-					</aside>
-				</section>
+          <aside class="notes">
+            Poll: How many people have never used git? have you used other source control?
+            In case you aren't familiar, git is...<br>
+            → code goes in a git repository... A history of the codebase, revision, control<br>
+            → distributed means every "clone" is it's own local repo (offline anyone)<br>
+            → speedy because it's local for most operations<br>
+            → because sha1 checksums<br>
+            → non-linear... branching and mergeing are super fast, A core assumption in Git is that a change will be merged more often than it is written<br>
+            → popular! yay<br><br>
+            (dont advance)
+            If you're curious to read more about it, or need some selling points, the wiki page is pretty great
+          </aside>
+        </section>
 
-				<section style='height: 75%'>
-					<h3>Okay! So what is GitHub?</h3>
-					<img src="images/github.png" style='max-height: 75%'>
-					<p class="fragment">Build software better, <strong>together.</strong><br><small>(Emphasis mine)</small></p>
-					<aside class="notes">
-						Another quick poll - how many of you already have a GitHub account? Do you use it for work? For open source?<br>
-						For those of you that don't know - GitHub - aside from having an adorably cute mascot - is a place for hosting and collaborating on git repositories.  Their Motto → really kind of sums it up.<br>
-					</aside>
-				</section>
+        <section style='height: 75%'>
+          <h3>Okay! So what is GitHub?</h3>
+          <img src="images/github.png" style='max-height: 75%'>
+          <p class="fragment">Build software better, <strong>together.</strong><br><small>(Emphasis mine)</small></p>
+          <aside class="notes">
+            Another quick poll - how many of you already have a GitHub account? Do you use it for work? For open source?<br>
+            For those of you that don't know - GitHub - aside from having an adorably cute mascot - is a place for hosting and collaborating on git repositories.  Their Motto → really kind of sums it up.<br>
+          </aside>
+        </section>
 
-				<section>
-					<h3>Together...</h3>
-					<ul class="build">
-						<li>Sharing Knowledge</li>
-						<li>With history for reference</li>
-						<li>Asynchronusly</li>
-					</ul>
-					<aside class="notes">
-						I want to zero in on the word "together" for a second.  What means to me is sharing our knowledge and efforts in an online space, with history for reference, and asynchrounsly.  This means you aren't tapping your co-worker on the shoulder and demanding they give you time, and we all get to be more productive.<br>
-					</aside>
-				</section>
+        <section>
+          <h3>Together...</h3>
+          <ul class="build">
+            <li>Sharing Knowledge</li>
+            <li>With history for reference</li>
+            <li>Asynchronusly</li>
+          </ul>
+          <aside class="notes">
+            I want to zero in on the word "together" for a second.  What means to me is sharing our knowledge and efforts in an online space, with history for reference, and asynchrounsly.  This means you aren't tapping your co-worker on the shoulder and demanding they give you time, and we all get to be more productive.<br>
+          </aside>
+        </section>
 
-				<section style='height: 75%'>
-					<h3>GitHub</h3>
-					<small>(in case you aren't already convinced)</small>
-					<ul>
-						<li>Integrated Issue Tracking</li>
-						<li>Collaborative Code Review (Pull Request)</li>
-						<li>Organizations &amp; Teams</li>
-						<li>Robust API</li>
-						<li>Integrations</li>
-						<li>Free for public</li>
-						<li>Pay for private</li>
-						<li>Pay more for <a href="https://enterprise.github.com/home">Enterprise</a></li>
-					</ul>
-					<aside class="notes">
-						For those of you not using GitHub at work, here's a few selling points in case you want to convice your team.<br>
-						Building on top of git's powerful tools for managing your code, GitHub adds a bunch of great features.<br>
-						→ They have an Integrated Issue Tracking system which is something every project needs to solve.  You can of course disable it if you already track your issues elsewhere.<br>
-						→ Collaborative Code Review! .... Pull Requests A.K.A. "PR"s are probably the most important feature offered by GitHub and I'll tell you all about em in a minute or two.<br>
-						→ github is also Team oriented.  you can create organizations, group them by teams, and control access to repos individually.<br>
-						→ GitHub's website is built using their own API.  Almost anything you can do on GitHub can be done with the very well documented API.<br>
-						→ And because the API is awesome, it integrates with a lot of services.  Flowdock, HipChat, Slack, IRC, Jenkins, Travis, JIRA, the list goes on and on.<br>
-						→ It's free for public repositories, even organizations!  If you aren't trying to hide it from the world, you'll never pay a dime. If you pay you unlock private repositories.<br>
-						→ If you pay even more you can get Enterprise, and run it on your own servers.<br>
-					</aside>
-				</section>
+        <section style='height: 75%'>
+          <h3>GitHub</h3>
+          <small>(in case you aren't already convinced)</small>
+          <ul>
+            <li>Integrated Issue Tracking</li>
+            <li>Collaborative Code Review (Pull Request)</li>
+            <li>Organizations &amp; Teams</li>
+            <li>Robust API</li>
+            <li>Integrations</li>
+            <li>Free for public</li>
+            <li>Pay for private</li>
+            <li>Pay more for <a href="https://enterprise.github.com/home">Enterprise</a></li>
+          </ul>
+          <aside class="notes">
+            For those of you not using GitHub at work, here's a few selling points in case you want to convice your team.<br>
+            Building on top of git's powerful tools for managing your code, GitHub adds a bunch of great features.<br>
+            → They have an Integrated Issue Tracking system which is something every project needs to solve.  You can of course disable it if you already track your issues elsewhere.<br>
+            → Collaborative Code Review! .... Pull Requests A.K.A. "PR"s are probably the most important feature offered by GitHub and I'll tell you all about em in a minute or two.<br>
+            → github is also Team oriented.  you can create organizations, group them by teams, and control access to repos individually.<br>
+            → GitHub's website is built using their own API.  Almost anything you can do on GitHub can be done with the very well documented API.<br>
+            → And because the API is awesome, it integrates with a lot of services.  Flowdock, HipChat, Slack, IRC, Jenkins, Travis, JIRA, the list goes on and on.<br>
+            → It's free for public repositories, even organizations!  If you aren't trying to hide it from the world, you'll never pay a dime. If you pay you unlock private repositories.<br>
+            → If you pay even more you can get Enterprise, and run it on your own servers.<br>
+          </aside>
+        </section>
 
-				<section>
-					<h3><a href="https://help.github.com/articles/be-social/">Be Social</a></h3>
-					<section>
-						<img src="images/follow.png" alt="Follow People...">
-					</section>
-					<section>
-						<img src="images/watch.png" alt="Watch Repositories...">
-					</section>
-					<section>
-						<h3>Did it get <strong>TOO</strong> social for you?</h3>
-						<ul>
-							<li><a href="https://github.com/settings/notifications">https://github.com/settings/notifications</a></li>
-							<li><a href="https://github.com/watching">https://github.com/watching</a></li>
-						</ul>
-					</section>
-					<section>
-						<h3>G-Mail Filters</h3>
-						<ul>
-							<li><code>list:talk-get-github.gnarf.github.com</code>
-							came from github.com/gnarf/talk-get-github<br>
-							</li>
-							<li><code>list:*.jquery.github.com</code><br>
-							came from github.com/jquery
-							</li>
-							<li><code>cc:me</code><br>
-							@gnarf, @jquery/core, or you've posted on it
-							</li>
-						</ul>
-					</section>
-				</section>
+        <section>
+          <h3><a href="https://help.github.com/articles/be-social/">Be Social</a></h3>
+          <section>
+            <img src="images/follow.png" alt="Follow People...">
+          </section>
+          <section>
+            <img src="images/watch.png" alt="Watch Repositories...">
+          </section>
+          <section>
+            <h3>Did it get <strong>TOO</strong> social for you?</h3>
+            <ul>
+              <li><a href="https://github.com/settings/notifications">https://github.com/settings/notifications</a></li>
+              <li><a href="https://github.com/watching">https://github.com/watching</a></li>
+            </ul>
+          </section>
+          <section>
+            <h3>G-Mail Filters</h3>
+            <ul>
+              <li><code>list:talk-get-github.gnarf.github.com</code>
+              came from github.com/gnarf/talk-get-github<br>
+              </li>
+              <li><code>list:*.jquery.github.com</code><br>
+              came from github.com/jquery
+              </li>
+              <li><code>cc:me</code><br>
+              @gnarf, @jquery/core, or you've posted on it
+              </li>
+            </ul>
+          </section>
+        </section>
 
-				<section>
-					<h3>Collaboration</h3>
-					<section>
-						<h4>Ahh, Push it</h4>
-						<p><img src="images/push-it.gif"></p>
-						<small>Like that prompt? Check out <a href="https://github.com/gnarf/.dotfiles/blob/master/init.sh#L3-L14">my dotfiles... on GitHub...</a>!</small>
-					</section>
-					<section>
-						<h4>Access Control (personal repo)</h4>
-						Repo → Settings → Collaborators<br>
-						<img src="images/collab-personal.png" alt="Personal settings">
-					</section>
-					<section>
-						<h4>Access Control (organization - teams)</h4>
-						Org → Teams <br>
-						<img src="images/collab-teams.png" alt="Team settings">
-						Teams grant (read, write, or admin) to (repos) for (people).<br>
-						Teams also setup @jquery/core for instance.
-					</section>
-					<section>
-						<h4>View Collaborators (per file)</h4>
-						<a href="https://github.com/jquery/jquery/blob/master/src/effects.js"><img src="images/collab-per-file.png" alt="Team settings"></a>
-					</section>
-					<section>
-						<h4>View Collaborators (per line / blame)</h4>
-						<a href="https://github.com/jquery/jquery/blame/master/src/effects.js#L463"><img src="images/collab-per-line.png" alt="Team settings"></a>
-					</section>
-					<section>
-						<h4>Comment on a commit?!</h4>
-						<a href="https://github.com/jquery/jquery/commit/36369ce50ff276dcf2959add7dc949af83b221c2#comments"><img src="images/collab-comment-commit.png" alt="Team settings"></a>
-					</section>
-				</section>
+        <section>
+          <h3>Collaboration</h3>
+          <section>
+            <h4>Ahh, Push it</h4>
+            <p><img src="images/push-it.gif"></p>
+            <small>Like that prompt? Check out <a href="https://github.com/gnarf/.dotfiles/blob/master/init.sh#L3-L14">my dotfiles... on GitHub...</a>!</small>
+          </section>
+          <section>
+            <h4>Access Control (personal repo)</h4>
+            Repo → Settings → Collaborators<br>
+            <img src="images/collab-personal.png" alt="Personal settings">
+          </section>
+          <section>
+            <h4>Access Control (organization - teams)</h4>
+            Org → Teams <br>
+            <img src="images/collab-teams.png" alt="Team settings">
+            Teams grant (read, write, or admin) to (repos) for (people).<br>
+            Teams also setup @jquery/core for instance.
+          </section>
+          <section>
+            <h4>View Collaborators (per file)</h4>
+            <a href="https://github.com/jquery/jquery/blob/master/src/effects.js"><img src="images/collab-per-file.png" alt="Team settings"></a>
+          </section>
+          <section>
+            <h4>View Collaborators (per line / blame)</h4>
+            <a href="https://github.com/jquery/jquery/blame/master/src/effects.js#L463"><img src="images/collab-per-line.png" alt="Team settings"></a>
+          </section>
+          <section>
+            <h4>Comment on a commit?!</h4>
+            <a href="https://github.com/jquery/jquery/commit/36369ce50ff276dcf2959add7dc949af83b221c2#comments"><img src="images/collab-comment-commit.png" alt="Team settings"></a>
+          </section>
+        </section>
 
-				<section>
-					<h3>Pull Requests</h3>
+        <section>
+          <h3>Pull Requests</h3>
 
-					<section>
-						<p>Can't Push? Try a "Pull Request"</p>
-						<a href="https://github.com/jquery/jquery/pull/731/files"><img src="images/collab-pr.png" alt="Pull Request"></a>
-					</section>
+          <section>
+            <p>Can't Push? Try a "Pull Request"</p>
+            <a href="https://github.com/jquery/jquery/pull/731/files"><img src="images/collab-pr.png" alt="Pull Request"></a>
+          </section>
 
-					<section>
-						<p>Can Push, but want to discuss with team? Also a PR</p>
-						<a href="https://github.com/jquery/jquery/pull/731"><img src="images/collab-pr-comment.png" alt="Pull Request"></a>
-					</section>
+          <section>
+            <p>Can Push, but want to discuss with team? Also a PR</p>
+            <a href="https://github.com/jquery/jquery/pull/731"><img src="images/collab-pr-comment.png" alt="Pull Request"></a>
+          </section>
 
-					<section>
-						<ul>
-							<li>Both general and line comments.</li>
-							<li>Tracked in a branch</li>
-							<li>"Magic links" from comments<br>
-							   <code>#issue</code>, <code>gh-issue</code>, <code>owner/repo#issue</code>,<br><code>@user</code>, <code>@org/team</code>, <code>sha</code></li>
-							<li>All done? 👍 (:+1:) Merge it in!</li>
-						</ul>
-					</section>
+          <section>
+            <ul>
+              <li>Both general and line comments.</li>
+              <li>Tracked in a branch</li>
+              <li>"Magic links" from comments<br>
+                 <code>#issue</code>, <code>gh-issue</code>, <code>owner/repo#issue</code>,<br><code>@user</code>, <code>@org/team</code>, <code>sha</code></li>
+              <li>All done? 👍 (:+1:) Merge it in!</li>
+            </ul>
+          </section>
 
-					<section>
-						<h4>Comments welcome!</h4>
-						<ul>
-							<li>"Can you explain why we need this?"</li>
-							<li>"Would it be better to...."</li>
-							<li>"I think you need a comment here, it took me a few minutes to figure out"</li>
-							<li>"I tried this code locally, but the tests failed"</li>
-						</ul>
-						<aside class="notes">
-							Speaking for jQuery at least... Every other open source project I've contributed too was equally happy to have outsiders.<br>
-							Sometimes what we really need is a fresh pair of eyes to tell us something is greek instead of javascript.  Just be friendly and try your best to be helpful to the community.
-						</aside>
-					</section>
-				</section>
+          <section>
+            <h4>Comments welcome!</h4>
+            <ul>
+              <li>"Can you explain why we need this?"</li>
+              <li>"Would it be better to...."</li>
+              <li>"I think you need a comment here, it took me a few minutes to figure out"</li>
+              <li>"I tried this code locally, but the tests failed"</li>
+            </ul>
+            <aside class="notes">
+              Speaking for jQuery at least... Every other open source project I've contributed too was equally happy to have outsiders.<br>
+              Sometimes what we really need is a fresh pair of eyes to tell us something is greek instead of javascript.  Just be friendly and try your best to be helpful to the community.
+            </aside>
+          </section>
+        </section>
 
 
-				<section>
-					<h3>Get Involved</h3>
+        <section>
+          <h3>Get Involved</h3>
 
-					<section>
-						<p>Pick something you use, watch it.</p>
-					</section>
+          <section>
+            <p>Pick something you use, watch it.</p>
+          </section>
 
-					<section>
-						<p>Look for CONTRIBUTING.md or README.md for contribution rules</p>
-					</section>
+          <section>
+            <p>Look for CONTRIBUTING.md or README.md for contribution rules</p>
+          </section>
 
-					<section>
-						<p>Ask if you can help on issues</p>
-					</section>
+          <section>
+            <p>Ask if you can help on issues</p>
+          </section>
 
-					<section>
-						<p>Ask for help if you need it!</p>
-						<p>Projects usually have one of these:</p>
-						<ul>
-							<li>IRC</li>
-							<li>Mailing List</li>
-							<li>Gitter.im</li>
-						</ul>
-					</section>
+          <section>
+            <p>Ask for help if you need it!</p>
+            <p>Projects usually have one of these:</p>
+            <ul>
+              <li>IRC</li>
+              <li>Mailing List</li>
+              <li>Gitter.im</li>
+            </ul>
+          </section>
 
-					<section>
-						<p>Remember, most open source is voulnteer, and wants help with something.</p>
-					</section>
-				</section>
+          <section>
+            <p>Remember, most open source is voulnteer, and wants help with something.</p>
+          </section>
+        </section>
 
-				<section>
-					<h3>Pro-Tips</h3>
+        <section>
+          <h3>Pro-Tips</h3>
 
-					<section>
-						<h4>Keyboard Navigation</h4>
-						<p>Hit <code>?</code> on any GitHub page to see the shortcuts.</p>
-						<p>My favorite is <code>t</code> to search for files in a repo</p>
-					</section>
+          <section>
+            <h4>Keyboard Navigation</h4>
+            <p>Hit <code>?</code> on any GitHub page to see the shortcuts.</p>
+            <p>My favorite is <code>t</code> to search for files in a repo</p>
+          </section>
 
-					<section>
-						<h4>Pull direct from pull requests</h4>
-						<a href="https://gist.github.com/gnarf/5406589">https://gist.github.com/gnarf/5406589</a>
-						<ul>
-							<li><code>git pr 4</code> - creates local branch pr/4 from the <code>origin</code> remote and checks it out</li>
-							<li><code>git pr 4 upstream</code> - creates local branch pr/4 from <code>upstream</code> remote and checks it out</li>
-							<li><code>git pr-clean</code> - removes all pr/* branches from your local repo</li>
-						</ul>
-					</section>
-				</section>
-			</div>
+          <section>
+            <h4>Pull direct from pull requests</h4>
+            <a href="https://gist.github.com/gnarf/5406589">https://gist.github.com/gnarf/5406589</a>
+            <ul>
+              <li><code>git pr 4</code> - creates local branch pr/4 from the <code>origin</code> remote and checks it out</li>
+              <li><code>git pr 4 upstream</code> - creates local branch pr/4 from <code>upstream</code> remote and checks it out</li>
+              <li><code>git pr-clean</code> - removes all pr/* branches from your local repo</li>
+            </ul>
+          </section>
+        </section>
+      </div>
 
-		</div>
+    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
 
-		</script>
+    </script>
 
-	</body>
+  </body>
 </html>
